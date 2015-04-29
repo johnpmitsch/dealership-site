@@ -1,0 +1,27 @@
+<div class="row">
+  <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+    <div class="jumbotron">
+      <h1>Lowest Prices in CT</h1>
+      <p class="jumbotron-text">Quality automobiles for less</p>
+    </div>
+    <div class="well">Bacon ipsum dolor amet fatback biltong swine landjaeger alcatra short ribs salami chicken bacon tri-tip shoulder pig cupim. Corned beef shank ball tip swine flank chicken, short ribs porchetta bresaola strip steak spare ribs filet mignon tenderloin kevin ham hock. Ham hock shank frankfurter turducken tongue ball tip pork chop leberkas tenderloin meatball. Biltong fatback bacon drumstick tail andouille filet mignon chuck prosciutto. Ham hock kielbasa cow corned beef swine alcatra flank sirloin tail doner shoulder. Alcatra andouille spare ribs, turkey t-bone sausage ham chicken cupim.
+
+Bacon strip steak t-bone boudin pork. Short ribs ham leberkas turkey flank, kevin sausage. Jerky pork belly meatball, short loin alcatra ball tip landjaeger. Chuck beef landjaeger brisket pig andouille cow beef ribs. Strip steak shoulder drumstick shank, pork loin hamburger ham kielbasa ground round pig. Bacon tri-tip meatloaf, picanha sausage pork jerky alcatra pork chop.
+
+</div>
+  </div>
+  <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+    <h1>Featured Cars</h1>
+    <% @cars.each do |car| %>
+    <div class="col-xs-6 col-sm-12 col-md-12 col-lg-12">
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <p class="cntr"><%= link_to image_tag(car.featured_image, :class => "car_image"), car %></p>
+          <h4><%= car.year %> <%= car.make %> <%= car.model %></h4>
+          <p><%= number_to_currency(car.price, precision: 0) %></p>
+        </div>
+      </div>
+    </div>
+    <% end %>
+  </div>
+</div>

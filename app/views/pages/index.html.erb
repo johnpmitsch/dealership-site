@@ -1,0 +1,12 @@
+<div class="col-md-8">
+  <div class="jumbotron">
+    <h1>Lowest Prices in CT</h1>
+    <p class="jumbotron-text">Quality automobiles for less</p>
+  </div>
+</div>
+<div class="col-md-4">
+  <h1>Featured Cars</h1>
+  <% @cars.each do |car| %>
+    <%= car.model %>
+  <% end %>
+</div>

@@ -1,0 +1,15 @@
+// Place all the styles related to the store controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.jumbotron {
+  background: url("dealership_outside.jpg") no-repeat center center;
+  text-shadow: black 0.2em 0.2em 0.2em;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.car_image {
+  width: 100%;
+}
