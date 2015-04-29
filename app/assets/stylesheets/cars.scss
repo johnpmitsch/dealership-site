@@ -1,3 +1,37 @@
 // Place all the styles related to the cars controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.slide_container {
+   height: 300px;
+   width: 400px;
+   overflow: hidden;
+   position: relative;
+}
+.slide_container img {
+   height: auto;
+   width: 400px;
+   position: absolute;
+   margin: auto auto;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+}
+.carousel-size {
+  max-width: 400px;
+}
+.center {
+   float: none;
+   margin-left: auto;
+   margin-right: auto;
+   text-align: center;
+}
+.description {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.about_blurb {
+  padding: 10px;
+  margin: 20px;
+}

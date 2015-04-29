@@ -1,11 +1,11 @@
-<h1>Current Inventory</h1>
+<h1 class="center">Current Inventory</h1>
 <% @cars.in_groups_of(3).each do |group| %>
-<div class="row">
+<div class="row center">
   <% group.each do |car| %>
     <% if car %>
-      <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-        <%= link_to image_tag(car.image.url(:medium), :class => "car_image"), car %>
-        <%= car.year %> <%= car.make %> <%= car.model %>
+      <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 center">
+        <%= link_to image_tag(car.featured_image, :class => "car_image"), car %>
+        <h4><%= car.year %> <%= car.make %> <%= car.model %></h4>
         <p><%= number_to_currency(car.price, precision: 0) %></p>
       </div>
       <% end %>

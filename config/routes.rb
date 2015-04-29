@@ -5,6 +5,8 @@ Rails.application.routes.draw do
   resources :store
 
   get 'inventory' => 'store#inventory'
+  get 'about' => 'store#about'
+  get 'contact' => 'store#contact'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
