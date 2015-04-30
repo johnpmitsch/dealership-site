@@ -4,7 +4,7 @@
   <% group.each do |car| %>
     <% if car %>
       <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 center">
-        <%= link_to image_tag(car.featured_image, :class => "car_image"), car %>
+        <%= link_to image_tag(car.featured_image.medium, :class => "car_image"), car %>
         <h4><%= car.year %> <%= car.make %> <%= car.model %></h4>
         <p><%= number_to_currency(car.price, precision: 0) %></p>
       </div>
