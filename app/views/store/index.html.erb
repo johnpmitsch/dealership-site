@@ -4,7 +4,7 @@
       <h1>Lowest Prices in CT</h1>
       <p class="jumbotron-text">Quality automobiles for less</p>
     </div>
-    <div class="well">
+    <div class="well hompage_about">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
         exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
@@ -24,7 +24,7 @@
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
       <div class="panel panel-default">
         <div class="panel-body">
-          <p class="cntr"><%= link_to image_tag(car.featured_image, :class => "car_image"), car %></p>
+          <p class="cntr"><%= link_to image_tag(car.featured_image.medium, :class => "car_image"), car %></p>
           <h4><%= car.year %> <%= car.make %> <%= car.model %></h4>
           <p><%= number_to_currency(car.price, precision: 0) %></p>
         </div>

@@ -3,12 +3,13 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 .jumbotron {
   background: url("dealership_outside.jpg") no-repeat center center;
-  text-shadow:  1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;;
+  text-shadow:  1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
+
 
 .car_image {
   max-width: 100%;
@@ -23,4 +24,8 @@
 .about_blurb {
   margin-top:10px;
   padding: 10px;
+}
+
+.container-fluid {
+  padding: 0px;
 }

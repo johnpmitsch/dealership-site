@@ -30,3 +30,15 @@
   margin-top: 20px;
   margin-bottom: 20px;
 }
+.no-padding {
+  padding: 0px !important;
+}
+
+@media (max-width: 480px) {
+  .slide_container {
+    width: 300px;
+  }
+  .slide_container img {
+    width: 300px;
+  }
+}
