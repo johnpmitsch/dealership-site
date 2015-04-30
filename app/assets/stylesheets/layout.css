@@ -1,0 +1,16 @@
+@media (max-width: 480px) {
+    .container-fluid, .col-xs-12{
+      padding:0 !important;
+      margin:0 !important;
+    }
+
+    body {
+      padding:0;
+    }
+
+    .navbar-fixed-top, .navbar-fixed-bottom, .navbar-static-top {
+      margin-left: 0;
+      margin-right: 0;
+      margin-bottom:0;
+    }
+}
