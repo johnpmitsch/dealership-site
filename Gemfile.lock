@@ -267,6 +267,7 @@ DEPENDENCIES
   carrierwave!
   coffee-rails (~> 4.1.0)
   fog
+  fog-aws
   high_voltage (~> 2.3.0)
   jbuilder (~> 2.0)
   jquery-rails
